@@ -1,0 +1,9 @@
+resumen de tus "llaves de acceso" por si las necesitas luego para el Backend:
+
+Host: localhost
+
+Puerto: 5433
+
+Usuario: (el que hayas puesto en tu archivo .env o docker-compose.yml)
+
+Base de datos: guardian_db (o el nombre que definieras)

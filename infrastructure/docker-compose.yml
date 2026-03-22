@@ -1,0 +1,17 @@
+services:
+  database:
+    image: postgres:16-alpine
+    container_name: guardian-db
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin_pass
+      - POSTGRES_DB=ai_ops_logs
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    platform: linux/arm64
+
+volumes:
+  db_data:
